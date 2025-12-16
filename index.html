@@ -128,51 +128,46 @@
       <div class="container">
         <h2 class="text-center mb-4">Pendaftaran Anggota</h2>
 
-        <form class="card p-4 shadow mx-auto" style="max-width: 600px">
+        <form
+          action="https://script.google.com/macros/s/AKfycbxhKaBExhuvDCf-_1yd7ReJVAT5G6cm7so9z9aa36aqfcfQhUYEC2xm43-dUhMyTyTW/exec"
+          method="POST"
+          class="card p-4 shadow mx-auto"
+          style="max-width: 600px"
+        >
           <div class="mb-3">
             <label class="form-label">Nama Lengkap</label>
-            <input type="text" class="form-control" />
+            <input type="text" class="form-control" name="full_name" required />
           </div>
 
           <div class="mb-3">
             <label class="form-label">Program Kursus</label>
-            <select class="form-select">
-              <option>--Nama Program--</option>
-              <option>Desain Grafis</option>
-              <option>Web Programming</option>
-              <option>Data Analysis</option>
+            <select class="form-select" name="program_kursus" required>
+              <option value="">--Nama Program--</option>
+              <option value="Desain Grafis">Desain Grafis</option>
+              <option value="Web Programming">Web Programming</option>
+              <option value="Data Analysis">Data Analysis</option>
             </select>
           </div>
 
           <div class="mb-3">
             <label class="form-label">NIK / Nomor Induk</label>
-            <input type="text" class="form-control" />
+            <input type="text" class="form-control" name="nik" required />
           </div>
 
           <div class="mb-3">
             <label class="form-label">Alamat</label>
-            <textarea class="form-control"></textarea>
+            <textarea class="form-control" name="alamat" required></textarea>
           </div>
 
           <div class="mb-3">
             <label class="form-label">Nomor WhatsApp</label>
-            <input type="text" class="form-control" />
+            <input type="text" class="form-control" name="whatsapp" required />
           </div>
 
-          <button class="btn btn-primary w-100">Daftar Sekarang</button>
+          <button type="submit" class="btn btn-primary w-100">
+            Daftar Sekarang
+          </button>
         </form>
-      </div>
-    </section>
-
-    <!-- ================= KELAS ================= -->
-    <section id="kelas" class="bg-light py-5">
-      <div class="container">
-        <h2 class="text-center mb-4">Daftar Kelas</h2>
-        <ul class="list-group">
-          <li class="list-group-item">Kelas Dasar Web</li>
-          <li class="list-group-item">Kelas Python Pemula</li>
-          <li class="list-group-item">Kelas Excel untuk Data</li>
-        </ul>
       </div>
     </section>
 
