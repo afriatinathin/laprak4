@@ -1,0 +1,163 @@
+/* ================= GLOBAL ================= */
+body {
+  padding-top: 70px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f8fafc;
+}
+
+section {
+  padding: 70px 0; /* semua section seragam */
+}
+
+h2 {
+  font-weight: 700;
+  color: #13203d;
+}
+
+/* ================= NAVBAR ================= */
+.custom-navbar {
+  background-color: #13203d;
+}
+
+.custom-navbar .navbar-brand {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.custom-navbar .nav-link {
+  color: #e5e7eb;
+  transition: 0.3s;
+}
+
+.custom-navbar .nav-link:hover,
+.custom-navbar .nav-link.active {
+  color: #43608a;
+}
+
+/* ================= HERO ================= */
+.hero {
+  background: linear-gradient(135deg, #6292de, #142854);
+  padding: 140px 0;
+}
+
+.hero h1 {
+  font-size: 42px;
+  font-weight: 800;
+}
+
+.hero p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+/* ================= ABOUT ================= */
+#about {
+  background-color: #ffffff;
+}
+
+#about p {
+  color: #374151;
+  line-height: 1.7;
+}
+
+/* ================= INFORMASI LAYANAN ================= */
+#informasi {
+  background-color: #f1f5f9;
+}
+
+#informasi .card {
+  border-radius: 16px;
+  transition: 0.3s;
+}
+
+#informasi .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* ================= PENDAFTARAN ================= */
+#pendaftaran {
+  margin-top: 40px;
+}
+
+#pendaftaran form {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f8fafc;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+#pendaftaran label {
+  color: #1f2937;
+  font-weight: 600;
+}
+
+#pendaftaran .form-control,
+#pendaftaran .form-select {
+  height: 40px;
+  font-size: 14px;
+}
+
+#pendaftaran textarea.form-control {
+  min-height: 80px;
+}
+
+#pendaftaran .form-control:focus,
+#pendaftaran .form-select:focus {
+  border-color: #43608a;
+  box-shadow: 0 0 0 0.2rem rgba(67, 96, 138, 0.25);
+}
+
+#pendaftaran .btn-primary {
+  background: linear-gradient(135deg, #142854, #6c95d8);
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+#pendaftaran .btn-primary:hover {
+  background: linear-gradient(135deg, #43608a, #43608a);
+}
+
+/* ================= KELAS ================= */
+#kelas {
+  background-color: #ffffff;
+}
+
+.list-group-item {
+  transition: 0.3s;
+}
+
+.list-group-item:hover {
+  background-color: #43608a;
+  color: white;
+  cursor: pointer;
+}
+
+/* ================= KOLEKSI ================= */
+#koleksi {
+  background-color: #f1f5f9;
+}
+
+#koleksi .card {
+  border-radius: 16px;
+  transition: 0.3s;
+}
+
+#koleksi .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* ================= FOOTER ================= */
+.footer {
+  background-color: #13203d;
+  padding: 30px 0;
+}
+
+.footer p {
+  margin: 4px 0;
+  font-size: 14px;
+}

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tik Tak Top Course</title>
+
+    <!-- BOOTSTRAP CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- CSS KITA -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="logo.png" width="80" class="me-2" />
+          Tik Tak Top
+        </a>
+
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#menu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+                >Layanan</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#pendaftaran"
+                    >Pendaftaran Anggota</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#informasi"
+                    >Informasi Layanan</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#kelas">Kelas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#koleksi">Koleksi</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ================= HERO ================= -->
+    <section id="home" class="hero text-white text-center py-5">
+      <div class="container">
+        <h1>Selamat Datang di Tik Tak Top Course</h1>
+        <p>Lembaga Kursus Komputer Profesional</p>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section id="about" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Tentang Kami</h2>
+        <p class="text-center">
+          <strong>Tik Tak Top</strong> adalah lembaga kursus komputer yang
+          menyediakan pelatihan keterampilan digital di bidang teknologi
+          informasi.
+        </p>
+        <p class="text-center">
+          Program kursus dirancang untuk pemula hingga tingkat lanjut guna
+          mencetak sumber daya manusia yang siap bersaing di dunia kerja.
+        </p>
+      </div>
+    </section>
+
+    <!-- ================= INFORMASI LAYANAN ================= -->
+    <section id="informasi" class="bg-light py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Informasi Layanan</h2>
+
+        <div class="row text-center">
+          <div class="col-md-4 mb-3">
+            <div class="card p-3 shadow-sm">
+              <h5>Desain Grafis</h5>
+              <p>Pelatihan desain grafis menggunakan software profesional.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-3">
+            <div class="card p-3 shadow-sm">
+              <h5>Web Programming</h5>
+              <p>
+                Pembelajaran pembuatan website dengan HTML, CSS, dan Bootstrap.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-3">
+            <div class="card p-3 shadow-sm">
+              <h5>Data Analysis</h5>
+              <p>Pelatihan pengolahan dan analisis data menggunakan Excel.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PENDAFTARAN ================= -->
+    <section id="pendaftaran" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Pendaftaran Anggota</h2>
+
+        <form class="card p-4 shadow mx-auto" style="max-width: 600px">
+          <div class="mb-3">
+            <label class="form-label">Nama Lengkap</label>
+            <input type="text" class="form-control" />
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Program Kursus</label>
+            <select class="form-select">
+              <option>--Nama Program--</option>
+              <option>Desain Grafis</option>
+              <option>Web Programming</option>
+              <option>Data Analysis</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">NIK / Nomor Induk</label>
+            <input type="text" class="form-control" />
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Alamat</label>
+            <textarea class="form-control"></textarea>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Nomor WhatsApp</label>
+            <input type="text" class="form-control" />
+          </div>
+
+          <button class="btn btn-primary w-100">Daftar Sekarang</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ================= KELAS ================= -->
+    <section id="kelas" class="bg-light py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Daftar Kelas</h2>
+        <ul class="list-group">
+          <li class="list-group-item">Kelas Dasar Web</li>
+          <li class="list-group-item">Kelas Python Pemula</li>
+          <li class="list-group-item">Kelas Excel untuk Data</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= KOLEKSI ================= -->
+    <section id="koleksi" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Koleksi</h2>
+
+        <div class="row text-center">
+          <div class="col-md-4 mb-3">
+            <div class="card shadow-sm">
+              <img
+                src="Gambar2.webp"
+                class="card-img-top"
+                alt="Koleksi Desain"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Koleksi Desain Website</h5>
+                <p class="card-text">
+                  Contoh website hasil latihan dan proyek peserta.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-3">
+            <div class="card shadow-sm">
+              <img
+                src="Gambar1.png"
+                class="card-img-top"
+                alt="Koleksi Website"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Koleksi Desain Website</h5>
+                <p class="card-text">
+                  Contoh website hasil latihan dan proyek peserta.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-3">
+            <div class="card shadow-sm">
+              <img src="Gambar3.png" class="card-img-top" alt="Koleksi Data" />
+              <div class="card-body">
+                <h5 class="card-title">Koleksi Desain Website</h5>
+                <p class="card-text">
+                  Contoh website hasil latihan dan proyek peserta.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer text-white text-center py-4 bg-dark">
+      <p>Alamat: Jl. Pendidikan No.10</p>
+      <p>Contact: 0812-3456-7890</p>
+      <p>Instagram | Facebook | WhatsApp</p>
+    </footer>
+
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
